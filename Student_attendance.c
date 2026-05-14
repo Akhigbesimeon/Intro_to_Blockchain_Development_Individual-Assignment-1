@@ -175,7 +175,7 @@ void view_records() {
 
 void validate_chain() {
     Block* current = blockchain_head;
-    printf("\n Initiating Chain Validation...\n");
+    printf("\nInitiating Chain Validation...\n");
 
     while (current != NULL) {
         char recalculated_hash[HASH_HEX_LEN];
@@ -204,7 +204,7 @@ void tamper_demonstration() {
     }
 
     Block* target = blockchain_head->next;
-    printf("\n Tampering with Block %d...\n", target->index);
+    printf("\nTampering with Block %d...\n", target->index);
     strcpy(target->status, "PRESENT");
     printf("Changed status manually. Run Validation to detect.\n");
 }
