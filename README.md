@@ -13,8 +13,6 @@ The system loads a pre-defined registry of students and allows administrators to
 * **File-Based Persistence:** Loads valid student credentials from a CSV-formatted `students.txt` file at startup.
 * **Tamper Detection Engine:** Iterates through the linked list in memory to validate `hash` and `previous_hash` integrity, catching unauthorized modifications.
 
----
-
 ## Prerequisites
 
 To compile and run this application, your system must have the following installed:
@@ -23,8 +21,6 @@ To compile and run this application, your system must have the following install
   * Ubuntu/Debian: `sudo apt-get install libssl-dev`
   * CentOS/RHEL: `sudo yum install openssl-devel`
   * macOS (Homebrew): `brew install openssl`
-
----
 
 ## Compilation and Setup
 
