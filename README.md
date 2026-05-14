@@ -6,7 +6,7 @@ An immutable, cryptographically secure attendance tracking application implement
 
 The system loads a pre-defined registry of students and allows administrators to mark attendance. Each attendance record is encapsulated in a dynamically allocated `Block`, hashed using `SHA-256`, and cryptographically linked to the previous block. Any attempt to alter historical attendance records will break the chain linkage, triggering the system's tamper detection mechanisms.
 
-### Key Features
+## Key Features
 * **Immutable Ledger:** Records cannot be altered once appended to the chain.
 * **Cryptographic Hashing:** Uses OpenSSL's SHA-256 for deterministic block hashing.
 * **Simulated Digital Signatures:** Generates a deterministic 72-byte buffer mimicking an ECDSA footprint to authenticate entries.
