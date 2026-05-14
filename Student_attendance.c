@@ -219,8 +219,8 @@ int main() {
         printf("\n-- Student Attendance System --\n");
         printf("1. Mark Attendance\n");
         printf("2. View Records\n");
-        printf("3. Tamper with a Record\n");
-        printf("4. Validate Chain\n");
+        printf("3. Validate Chain\n");
+        printf("4. Tamper with a Record\n");
         printf("5. Exit\n");
         printf("Select option: ");
         if (scanf("%d", &choice) != 1) {
@@ -231,8 +231,8 @@ int main() {
         switch (choice) {
             case 1: mark_attendance(); break;
             case 2: view_records(); break;
-            case 3: tamper_demonstration() ; break;
-            case 4: validate_chain(); break;
+            case 3: validate_chain() ; break;
+            case 4: tamper_demonstration(); break;
             case 5: printf("Exiting...\n"); break;
             default: printf("Invalid choice.\n");
         }
